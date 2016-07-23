@@ -1,0 +1,47 @@
+### Xcode ###
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
+
+## Build generated
+build/
+DerivedData/
+
+#OS X temporary files that should never be committed
+.DS_Store
+.Trashes
+*.swp
+
+# In particular, if you're using CocoaPods, you'll want to comment-out this line:
+*.lock
+Podfile.lock
+
+
+####
+# Xcode build files -
+#
+# NB: slash on the end, so we only remove the FOLDER, not any files that were badly named "DerivedData"
+
+DerivedData/
+
+# NB: slash on the end, so we only remove the FOLDER, not any files that were badly named "build"
+
+build/
+
+
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata/
+
+## Other
+*.moved-aside
+*.xccheckout
+*.xcscmblueprint
