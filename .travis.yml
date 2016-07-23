@@ -12,8 +12,8 @@ xcode_sdk: iphonesimulator8.3 #5
 #   -chmod +x travis/before_script.sh
 #before_script: travis/before_script.sh
 #script: travis/script.sh
-before_script: xcodebuild -project ~/build/DS-Utility/DS-Growing-Text-View.xcodeproj -scheme applozicdemo -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO 
-script: travis_wait 30 scan
+#before_script: xcodebuild -project ~/build/DS-Utility/DS-Growing-Text-View.xcodeproj -scheme applozicdemo -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO 
+#script: travis_wait 30 scan
 
 
 #script: pwd 
