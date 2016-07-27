@@ -30,7 +30,7 @@
     
    //Set THIS CLASS as TEXTVIEW's DELEGATE
     self.textView.maxLines = maxLines;
-    self.textView.minLines = minLines;
+    self.textView.minLines = minLines; 
     
     
     [self.textView setupTextViewHeightValues:self.textView minLines:minLines maxLines:maxLines];
