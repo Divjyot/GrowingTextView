@@ -288,13 +288,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = "Growing Text View/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.divjyotsingh.growingTextView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.divjyotsingh.djutility;
 				PRODUCT_NAME = DSGrowingTextView;
-				PROVISIONING_PROFILE = "29d0e3a9-8782-4f61-a929-3f0f34a86c40";
+				PROVISIONING_PROFILE = "c3b3fefd-e368-4a3d-87fa-57a41961aab1";
 			};
 			name = Debug;
 		};
@@ -303,13 +303,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				INFOPLIST_FILE = "Growing Text View/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.divjyotsingh.growingTextView;
+				PRODUCT_BUNDLE_IDENTIFIER = com.divjyotsingh.djutility;
 				PRODUCT_NAME = DSGrowingTextView;
-				PROVISIONING_PROFILE = "29d0e3a9-8782-4f61-a929-3f0f34a86c40";
+				PROVISIONING_PROFILE = "c3b3fefd-e368-4a3d-87fa-57a41961aab1";
 			};
 			name = Release;
 		};
