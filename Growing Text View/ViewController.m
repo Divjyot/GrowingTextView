@@ -22,16 +22,18 @@
     [super viewDidLoad];
     [self registerForKeyboardNotifications];
 
+    NSInteger * maxLines = (long*)5;
+    NSInteger * minLines = (long*)1;
+
     // Navigation width is constant
     navigationHeight = self.navigationController.navigationBar.frame.size.height + [UIApplication sharedApplication].statusBarFrame.size.height;
     
-    //Set THIS CLASS as TEXTVIEW's DELEGATE
-//    self.textView.delegate = self;
+   //Set THIS CLASS as TEXTVIEW's DELEGATE
+    self.textView.maxLines = maxLines;
+    self.textView.minLines = minLines;
     
-    self.textView.maxLines = (NSInteger*)5;
-    self.textView.minLines = (NSInteger*)1;
     
-    [self.textView setupTextViewHeightValues:self.textView minLines:(NSInteger*)2 maxLines:(NSInteger*)5];
+    [self.textView setupTextViewHeightValues:self.textView minLines:minLines maxLines:maxLines];
 }
 
 

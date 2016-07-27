@@ -10,6 +10,6 @@
 #import <UIKit/UIKit.h>
 
 @interface DSUtility : NSObject
-+(CGRect)getSizeForLines:(int)n inTextView:(UITextView*)textView withFont:(UIFont*)font;
++(CGRect)getTextViewSizeForLines:(int)n inTextView:(UITextView*)textView withFont:(UIFont*)font;
 +(CGRect)sizeOfTextInTextView:(UITextView*)textView withFont:(UIFont*)font;
 @end

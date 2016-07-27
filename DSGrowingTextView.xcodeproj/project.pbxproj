@@ -22,7 +22,7 @@
 		2901D8601D2A4F2100210851 /* DSTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSTextView.m; sourceTree = "<group>"; };
 		2901D8621D2A575F00210851 /* DSUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DSUtility.h; sourceTree = "<group>"; };
 		2901D8631D2A575F00210851 /* DSUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DSUtility.m; sourceTree = "<group>"; };
-		29F9109B1D1AE9A700E2AE35 /* DS-Growing-Text-View.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DS-Growing-Text-View.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		29F9109B1D1AE9A700E2AE35 /* DSGrowingTextView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DSGrowingTextView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		29F9109F1D1AE9A700E2AE35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29F910A11D1AE9A700E2AE35 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		29F910A21D1AE9A700E2AE35 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2901D85E1D2A4EEF00210851 /* DSTextView */ = {
+		2901D85E1D2A4EEF00210851 /* Include */ = {
 			isa = PBXGroup;
 			children = (
 				2901D85F1D2A4F2100210851 /* DSTextView.h */,
@@ -53,13 +53,13 @@
 				2901D8621D2A575F00210851 /* DSUtility.h */,
 				2901D8631D2A575F00210851 /* DSUtility.m */,
 			);
-			name = DSTextView;
+			name = Include;
 			sourceTree = "<group>";
 		};
 		29F910921D1AE9A700E2AE35 = {
 			isa = PBXGroup;
 			children = (
-				29F9109D1D1AE9A700E2AE35 /* Growing Text View */,
+				29F9109D1D1AE9A700E2AE35 /* DSGrowingTextView */,
 				29F9109C1D1AE9A700E2AE35 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -67,15 +67,15 @@
 		29F9109C1D1AE9A700E2AE35 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				29F9109B1D1AE9A700E2AE35 /* DS-Growing-Text-View.app */,
+				29F9109B1D1AE9A700E2AE35 /* DSGrowingTextView.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		29F9109D1D1AE9A700E2AE35 /* Growing Text View */ = {
+		29F9109D1D1AE9A700E2AE35 /* DSGrowingTextView */ = {
 			isa = PBXGroup;
 			children = (
-				2901D85E1D2A4EEF00210851 /* DSTextView */,
+				2901D85E1D2A4EEF00210851 /* Include */,
 				29F910A11D1AE9A700E2AE35 /* AppDelegate.h */,
 				29F910A21D1AE9A700E2AE35 /* AppDelegate.m */,
 				29F910A41D1AE9A700E2AE35 /* ViewController.h */,
@@ -86,6 +86,7 @@
 				29F910AF1D1AE9A700E2AE35 /* Info.plist */,
 				29F9109E1D1AE9A700E2AE35 /* Supporting Files */,
 			);
+			name = DSGrowingTextView;
 			path = "Growing Text View";
 			sourceTree = "<group>";
 		};
@@ -100,9 +101,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		29F9109A1D1AE9A700E2AE35 /* DS-Growing-Text-View */ = {
+		29F9109A1D1AE9A700E2AE35 /* DSGrowingTextView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 29F910B21D1AE9A700E2AE35 /* Build configuration list for PBXNativeTarget "DS-Growing-Text-View" */;
+			buildConfigurationList = 29F910B21D1AE9A700E2AE35 /* Build configuration list for PBXNativeTarget "DSGrowingTextView" */;
 			buildPhases = (
 				29F910971D1AE9A700E2AE35 /* Sources */,
 				29F910981D1AE9A700E2AE35 /* Frameworks */,
@@ -112,9 +113,9 @@
 			);
 			dependencies = (
 			);
-			name = "DS-Growing-Text-View";
+			name = DSGrowingTextView;
 			productName = "Growing Text View";
-			productReference = 29F9109B1D1AE9A700E2AE35 /* DS-Growing-Text-View.app */;
+			productReference = 29F9109B1D1AE9A700E2AE35 /* DSGrowingTextView.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -131,7 +132,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 29F910961D1AE9A700E2AE35 /* Build configuration list for PBXProject "DS-Growing-Text-View" */;
+			buildConfigurationList = 29F910961D1AE9A700E2AE35 /* Build configuration list for PBXProject "DSGrowingTextView" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -144,7 +145,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				29F9109A1D1AE9A700E2AE35 /* DS-Growing-Text-View */,
+				29F9109A1D1AE9A700E2AE35 /* DSGrowingTextView */,
 			);
 		};
 /* End PBXProject section */
@@ -289,7 +290,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.divjyotsingh.Growing-Text-View";
-				PRODUCT_NAME = "DS-Growing-Text-View";
+				PRODUCT_NAME = DSGrowingTextView;
 			};
 			name = Debug;
 		};
@@ -301,14 +302,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.divjyotsingh.Growing-Text-View";
-				PRODUCT_NAME = "DS-Growing-Text-View";
+				PRODUCT_NAME = DSGrowingTextView;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		29F910961D1AE9A700E2AE35 /* Build configuration list for PBXProject "DS-Growing-Text-View" */ = {
+		29F910961D1AE9A700E2AE35 /* Build configuration list for PBXProject "DSGrowingTextView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				29F910B01D1AE9A700E2AE35 /* Debug */,
@@ -317,7 +318,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		29F910B21D1AE9A700E2AE35 /* Build configuration list for PBXNativeTarget "DS-Growing-Text-View" */ = {
+		29F910B21D1AE9A700E2AE35 /* Build configuration list for PBXNativeTarget "DSGrowingTextView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				29F910B31D1AE9A700E2AE35 /* Debug */,

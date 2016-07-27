@@ -21,6 +21,34 @@
     return self;
 }
 
+
+/*
+    Returns frame of text view with 'n' number of lines in it typed with uifont 'font'; height of that returned frame will be height upon which you will pause/unpause scrolling, height increasing/decresing.
+*/
+
++(CGRect)getTextViewSizeForLines:(int)n
+              inTextView:(UITextView*)textView
+                withFont:(UIFont*)font{
+    
+    NSString *saveText = textView.text, *newText = @"-";
+    for (int i = 1; i < n; ++i){
+        newText = [newText stringByAppendingString:@"\n|W|"];
+    }
+    
+    textView.text = newText;
+    
+    CGRect maximumHeight = [self sizeOfTextInTextView:textView withFont:font];
+    
+    textView.text = saveText;
+    
+    return maximumHeight;
+}
+
+/*
+ Returns frame of text view with 'n' number of lines in it typed with uifont 'font'
+*/
+
+
 +(CGRect)sizeOfTextInTextView:(UITextView*)textView withFont:(UIFont*)font
 {
     
@@ -35,14 +63,18 @@
 }
 
 
--(BOOL)isNewLine:(UITextView *)textView{
+
+/* 
+    Detecting if the typing cursor moves up/down i.e. is Line Changed or not
+*/
+
+-(BOOL)isLineChanged:(UITextView *)textView{
     
     BOOL flag = NO;
     UITextPosition* pos = textView.endOfDocument;
     self.currentRect = [textView caretRectForPosition:pos];
     
     if (self.currentRect.origin.y != self.previousRect.origin.y){
-        //new line reached, write your code
         flag = YES;
     }
     self.previousRect = self.currentRect;
@@ -51,26 +83,5 @@
     
 }
 
-+(CGRect)getSizeForLines:(int)n inTextView:(UITextView*)textView withFont:(UIFont*)font
-{
-    
-    NSString *saveText = textView.text, *newText = @"-";
-    
-//    textView.delegate = nil;
-//    textView.hidden = YES;
-    
-    for (int i = 1; i < n; ++i){
-        newText = [newText stringByAppendingString:@"\n|W|"];
-    }
-    
-    textView.text = newText;
-    
-    CGRect maximumHeight = [self sizeOfTextInTextView:textView withFont:font];
-    textView.text = saveText;
-//    textView.hidden = NO;
-//    textView.delegate = self;
-    return maximumHeight;
-    
-}
 
 @end
