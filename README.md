@@ -1,11 +1,13 @@
-# DS-Utility 
-###• OBJECTIVE-C
+# DSGrowingTextView
+
+## Description
+A general class for making a UITextView growing or scrolling based on number of lines. For example untill say 5 lines increase the text view height according to its text and after it make the scrolling instead.
+*Language: Objective-C*
 
 ## GIF
 <img src="http://i.giphy.com/cE0TKfFaStQ0U.gif">
 
-## Description
-A general class for making a UITextView growing or scrolling based on number of lines. For example untill say 5 lines increase the text view height according to its text and after it make the scrolling instead.
+
 
 ## Installation
 
