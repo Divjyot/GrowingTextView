@@ -3,22 +3,5 @@ osx_image: xcode7.3 #2
 xcode_project: DSGrowingTextView.xcodeproj
 xcode_scheme: DSGrowingTextView #4
 #xcode_sdk: iphonesimulator #5
-
-#install: 
-#         - travis_wait mvn install
-#bundler_args: --retry 3         
-#before_install:
-#  - sudo apt-get update
-#   -chmod +x travis/before_script.sh
-#before_script: travis/before_script.sh
-#script: travis/script.sh
-#before_script: xcodebuild -project ~/build/DS-Utility/DS-Growing-Text-View.xcodeproj -scheme applozicdemo -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO 
-#script: travis_wait 30 scan
-
-
-#script: pwd 
-#notifications:
- # email:
-  #  recipients:
     
 
