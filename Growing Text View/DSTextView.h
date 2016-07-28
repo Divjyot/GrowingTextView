@@ -20,11 +20,7 @@
                         minLines:(NSInteger*)minLines
                         maxLines:(NSInteger*)maxLines;
 
-
-@property (nonatomic) NSInteger * maxLines;
 @property (nonatomic) CGRect maxFrame;
-
-@property (nonatomic) NSInteger * minLines;
 @property (nonatomic) CGRect minFrame;
 
 @end

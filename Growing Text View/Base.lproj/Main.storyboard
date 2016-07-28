@@ -17,11 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="Fill me, human! With your kind words..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZAB-Fh-eAv" customClass="DSTextView">
-                                <rect key="frame" x="0.0" y="568" width="600" height="32"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZAB-Fh-eAv" customClass="DSTextView">
+                                <rect key="frame" x="0.0" y="568" width="600" height="34"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="32" id="cSK-Ju-JGa"/>
+                                    <constraint firstAttribute="height" constant="34" id="cSK-Ju-JGa"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -30,15 +30,63 @@
                                     <outlet property="textViewHeightConstraint" destination="cSK-Ju-JGa" id="Iu7-mI-Y7c"/>
                                 </connections>
                             </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="min lines" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TXp-Nm-IXo">
+                                <rect key="frame" x="193" y="53" width="75" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="75" id="Sv6-NN-xpV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter no. of lines (&lt;10)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yhw-v1-Ldw">
+                                <rect key="frame" x="193" y="28" width="213" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="213" id="3xS-Lt-iIk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ZQ-sW-Pdv">
+                                <rect key="frame" x="277" y="95" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="cW3-w3-teg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <size key="titleShadowOffset" width="2.2250738585072014e-308" height="0.0"/>
+                                <state key="normal" title="Done">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="done:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NJj-xI-XQd"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="max lines" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WuS-R1-WDF">
+                                <rect key="frame" x="331" y="53" width="75" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="1" alpha="0.44040948275862069" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="ZAB-Fh-eAv" secondAttribute="bottom" id="Dxh-DP-Xhx"/>
+                            <constraint firstItem="Yhw-v1-Ldw" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="5jl-C0-DBs"/>
+                            <constraint firstItem="TXp-Nm-IXo" firstAttribute="baseline" secondItem="WuS-R1-WDF" secondAttribute="baseline" id="9ly-UB-Um4"/>
+                            <constraint firstItem="Yhw-v1-Ldw" firstAttribute="centerX" secondItem="ZAB-Fh-eAv" secondAttribute="centerX" id="A0k-LW-cpM"/>
+                            <constraint firstAttribute="bottom" secondItem="ZAB-Fh-eAv" secondAttribute="bottom" constant="-2" id="Dxh-DP-Xhx"/>
+                            <constraint firstItem="TXp-Nm-IXo" firstAttribute="leading" secondItem="Yhw-v1-Ldw" secondAttribute="leading" id="FlE-MB-7SF"/>
+                            <constraint firstItem="9ZQ-sW-Pdv" firstAttribute="top" secondItem="Yhw-v1-Ldw" secondAttribute="bottom" constant="46" id="KZZ-cj-Kni"/>
+                            <constraint firstItem="WuS-R1-WDF" firstAttribute="leading" secondItem="TXp-Nm-IXo" secondAttribute="trailing" constant="63" id="MzQ-8d-mqE"/>
                             <constraint firstAttribute="trailing" secondItem="ZAB-Fh-eAv" secondAttribute="trailing" id="O2N-8E-u5C"/>
+                            <constraint firstItem="9ZQ-sW-Pdv" firstAttribute="centerX" secondItem="Yhw-v1-Ldw" secondAttribute="centerX" id="e3x-UK-VO0"/>
                             <constraint firstItem="ZAB-Fh-eAv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="f3k-9C-aiJ"/>
+                            <constraint firstItem="WuS-R1-WDF" firstAttribute="top" secondItem="Yhw-v1-Ldw" secondAttribute="bottom" constant="4" id="tKz-uc-IDv"/>
+                            <constraint firstItem="Yhw-v1-Ldw" firstAttribute="trailing" secondItem="WuS-R1-WDF" secondAttribute="trailing" id="ytg-qN-pEy"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="maxLinesTextField" destination="WuS-R1-WDF" id="zXp-cQ-xfJ"/>
+                        <outlet property="minLinesTextField" destination="TXp-Nm-IXo" id="gkH-XM-CSl"/>
                         <outlet property="textView" destination="ZAB-Fh-eAv" id="zLy-UZ-RX3"/>
                         <outlet property="textViewBottomConstraint" destination="Dxh-DP-Xhx" id="LnI-nY-zoh"/>
                         <outlet property="textViewHeightConstraint" destination="cSK-Ju-JGa" id="Umz-5B-TPV"/>
