@@ -12,7 +12,7 @@ xcode_scheme: DSGrowingTextView
 script:
 
   xctool
-  -workspace DSGrowingTextView/DSGrowingTextView.xcworkspace
+  -workspace DSGrowingTextView.xcworkspace
   -scheme DSGrowingTextView
   -sdk iphonesimulator
   -destination 'platform=iOS Simulator,name=iPhone 6 Plus'
