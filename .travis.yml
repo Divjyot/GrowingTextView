@@ -4,4 +4,5 @@ xcode_project: DSGrowingTextView.xcodeproj
 xcode_scheme: DSGrowingTextView #4
 #xcode_sdk: iphonesimulator #5
     script:
-  - xcodebuild [DEFAULT_OPTIONS] CODE_SIGNING_REQUIRED=NO
+    CODE_SIGN_IDENTITY=""
+    CODE_SIGNING_REQUIRED=NO
